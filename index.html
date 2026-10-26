@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>slides.manzano.dev</title>
+<meta name="description" content="Slide decks used for teaching, written in Markdown with Marp.">
+<style>
+  /* Accent colors match the numbered-list boxes in themes/main.css. */
+  :root {
+    --bg: #fbfbfa;
+    --surface: #ffffff;
+    --text: #1b1b1b;
+    --muted: #5d6168;
+    --line: #e4e4e1;
+    --blue: #1D5FA8;    --blue-tint: #E3EEFB;
+    --orange: #A84A0A;  --orange-tint: #FDEBD8;
+    --purple: #6A3D9A;  --purple-tint: #EEE6F8;
+    --teal: #0E6B63;    --teal-tint: #DDF2EF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17191c;
+      --surface: #1f2226;
+      --text: #ececea;
+      --muted: #a2a6ad;
+      --line: #32363c;
+      --blue: #7DB0EC;    --blue-tint: #1c2a3b;
+      --orange: #F0A46B;  --orange-tint: #352519;
+      --purple: #BB9BE3;  --purple-tint: #2a2236;
+      --teal: #6FCDC2;    --teal-tint: #18302d;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.25rem 3rem;
+  }
+  a { color: var(--blue); text-underline-offset: 0.18em; }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+
+  /* Header: a small stack of "slides" beside the title */
+  header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; }
+  .stack { position: relative; width: 3.5rem; height: 2.6rem; flex: none; }
+  .stack span {
+    position: absolute; inset: 0;
+    border-radius: 6px;
+    border-left: 4px solid var(--accent);
+    background: var(--tint);
+  }
+  .stack span:nth-child(1) { --accent: var(--teal);   --tint: var(--teal-tint);   transform: translate(12px, -12px); }
+  .stack span:nth-child(2) { --accent: var(--purple); --tint: var(--purple-tint); transform: translate(6px, -6px); }
+  .stack span:nth-child(3) { --accent: var(--blue);   --tint: var(--blue-tint); }
+  h1 {
+    margin: 0;
+    font-size: clamp(1.7rem, 6vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    overflow-wrap: anywhere;
+  }
+  h1 .domain { color: var(--muted); font-weight: 400; }
+  .lede { font-size: 1.15rem; margin: 0 0 3rem; }
+
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 2.75rem 0 1rem;
+  }
+  p { margin: 0 0 1rem; }
+
+  /* Course cards */
+  .courses { display: grid; gap: 0.9rem; padding: 0; margin: 0; list-style: none; }
+  .course {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+  }
+  .course h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+  .course p { margin: 0 0 0.6rem; color: var(--muted); font-size: 0.95rem; }
+  .course ul { margin: 0; padding-left: 1.1rem; }
+  .course li { margin: 0.15rem 0; }
+
+  /* Keyboard shortcuts */
+  .keys { display: grid; grid-template-columns: max-content 1fr; gap: 0.55rem 1rem; margin: 0; }
+  .keys dt { white-space: nowrap; }
+  .keys dd { margin: 0; color: var(--muted); }
+  kbd {
+    display: inline-block;
+    min-width: 1.7em;
+    padding: 0.05em 0.45em;
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 5px;
+    background: var(--surface);
+    font: 0.85em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    text-align: center;
+  }
+
+  code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="stack" aria-hidden="true"><span></span><span></span><span></span></div>
+    <h1>slides<span class="domain">.manzano.dev</span></h1>
+  </header>
+
+  <p class="lede">
+    The slide decks I use in class, published so students can look back
+    at a lesson, catch up after an absence, or follow along on their own screen.
+  </p>
+
+  <h2>What's here</h2>
+  <ul class="courses">
+    <li class="course" style="--accent: var(--blue)">
+      <h3>AP Cybersecurity</h3>
+      <p>Lessons on how networks and the internet work, and how they get attacked and defended.</p>
+      <ul>
+        <li><a href="ap-cyb/dns.html">DNS</a></li>
+      </ul>
+    </li>
+    <li class="course" style="--accent: var(--teal)">
+      <h3>General</h3>
+      <p>Material that applies to every class I teach.</p>
+      <ul>
+        <li><a href="general/class_policies.html">Class Policies</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Using the slides</h2>
+  <p>
+    Each deck is a single web page that runs in any browser, including on a phone.
+    Usually you'll get a direct link in class; every deck lives at
+    <code>slides.manzano.dev/&lt;course&gt;/&lt;deck&gt;.html</code>.
+  </p>
+  <dl class="keys">
+    <dt><kbd>→</kbd> <kbd>←</kbd></dt><dd>Next / previous slide (or swipe on a touchscreen)</dd>
+    <dt><kbd>F</kbd></dt><dd>Toggle full screen</dd>
+    <dt><kbd>P</kbd></dt><dd>Open presenter view with notes</dd>
+  </dl>
+
+  <h2>How it's made</h2>
+  <p>
+    Every deck is written in plain Markdown and turned into HTML with
+    <a href="https://marp.app">Marp</a>, using a small custom theme.
+    Short questions like “two truths and a lie” show up as colored boxes, and
+    the colors are chosen so none of them hints at the right answer.
+  </p>
+
+  <footer>
+    Made for teaching by manzano.dev.
+  </footer>
+</main>
+</body>
+</html>
