@@ -76,7 +76,7 @@ ee862826935c3eb19726eeb3105
 
 ---
 
-## How do I make sure that the file I received has not been modified?
+# Your friend wants to send you a really important file, and they want to make sure you receive the correct one. How can you use hashing to help ensure that you receive the correct one? You guys can only communicate online, you cannot meet in person. 
 
 ---
 

@@ -16,8 +16,10 @@ build: $(SLIDES:.md=.html)
 test: build
 	python3 -m http.server --directory $(BUILD)
 
-# Build, then commit everything and push (which triggers the deploy).
+# Build, remove each deck's HTML once its copy in build/ matches, then
+# commit everything and push (which triggers the deploy).
 deploy: build
+	for f in $(SLIDES:.md=.html); do cmp -s $$f $(BUILD)/$$f && rm $$f || { echo "$$f not copied to $(BUILD)/"; exit 1; }; done
 	git add .
 	git diff --cached --quiet || git commit -m "$$(date '+%Y-%m-%d %H:%M:%S')"
 	git push
