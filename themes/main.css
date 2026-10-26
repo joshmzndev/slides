@@ -1,0 +1,31 @@
+/* @theme main */
+@import 'uncover';
+
+/* Numbered lists become colored boxes (e.g. two truths and a lie).
+   Pale tints + dark text keep contrast high (WCAG AA); the colored
+   border and number mean color is never the only cue. No red/green,
+   so no box looks "right" or "wrong". */
+ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+ol > li {
+  margin: 0.4em 0;
+  padding: 0.5em 0.8em;
+  border-left: 0.35em solid var(--accent);
+  border-radius: 12px;
+  background: var(--tint);
+  color: #1b1b1b;
+  font-size: 0.8em;
+  line-height: 1.35;
+  text-align: left;
+}
+ol > li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+ol > li:nth-child(4n+1) { --tint: #E3EEFB; --accent: #1D5FA8; } /* blue */
+ol > li:nth-child(4n+2) { --tint: #FDEBD8; --accent: #A84A0A; } /* orange */
+ol > li:nth-child(4n+3) { --tint: #EEE6F8; --accent: #6A3D9A; } /* purple */
+ol > li:nth-child(4n+4) { --tint: #DDF2EF; --accent: #0E6B63; } /* teal */
