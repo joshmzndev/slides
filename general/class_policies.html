@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Class Policies</title>
+  <link href="../big.css" rel="stylesheet" type="text/css" />
+  <link href="../themes/light.css" rel="stylesheet" type="text/css" />
+  <style>
+    .accent { color: #0889d1; }
+    .muted { color: #8a8f96; font-weight: 400; }
+
+    /* Section divider slides ("Not graded" / "Graded") */
+    .section { background: #34383e; color: #f5f5f5; }
+
+    /* Two truths and a lie */
+    .options { grid-template-rows: 30% 10% 20% 20% 20%; }
+    .options-long { grid-template-rows: 30% 5% 21% 21% 21%; }
+    .options div, .options-long div { gap: 0.4em; }
+    .options b, .options-long b { color: #0889d1; flex: none; }
+    .options-long div { font-weight: 400; }
+
+    /* Single-question slides */
+    .question { grid-template-rows: 20% 60% 20%; text-align: center; }
+    .question div { justify-content: center; }
+
+    /* Heading + supporting lines */
+    .topic { grid-template-rows: 40% 30% 30%; }
+    .topic div:first-child { font-size: 1.6em; color: #0889d1; }
+    .topic div:not(:first-child) { font-weight: 400; }
+
+    pre {
+      margin: 0;
+      padding: 0.6em 0.9em;
+      background: #2b2f35;
+      color: #e6e6e6;
+      border-radius: 0.25em;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-weight: 400;
+      tab-size: 4;
+    }
+  </style>
+  <script>BIG_ASPECT_RATIO = 16 / 10</script>
+  <script src="../big.js"></script>
+</head>
+<body class="light">
+  <div class="layout options">
+    <img src="../images/truth_lie_banner.png" />
+    <div></div>
+    <div><b>A.</b> 7 / 2 == 3</div>
+    <div><b>B.</b> (1 + "2" + 3) == "123"</div>
+    <div><b>C.</b> "computer".substring(2, 5) == "mput"</div>
+  </div>
+  <div class="layout options-long">
+    <img src="../images/truth_lie_banner.png" />
+    <div></div>
+    <div><b>A.</b> <span>A website sees the public IP address of the network you use. This is so it can know which internet is connecting.</span></div>
+    <div><b>B.</b> <span>A website can see the private IP address of your device. This is so it can know which device is connecting.</span></div>
+    <div><b>C.</b> <span>An IP address alone does not tell you who a person is. You need help from police or IT to figure it out.</span></div>
+  </div>
+
+  <div><img src="../images/leaderboard1.png" /></div>
+  <div>
+<pre><code>public class Main {
+	public static void main(String[] args) {
+		System.out.println("Hello world!");
+	}
+}</code></pre>
+  </div>
+  <div><img src="../images/leaderboard2.png" /></div>
+
+  <div data-body-class="section">“Not graded”</div>
+  <div>Leaderboard Points</div>
+  <div>Privilege <span class="muted">or</span> Benefits</div>
+
+  <div data-body-class="section">“Graded”</div>
+  <div>Unit Tests</div>
+  <div>Exams</div>
+  <div>Safe Exam Browser</div>
+
+  <div>5 minutes after class starts</div>
+  <div>Tardy <span class="muted">+</span> No Points</div>
+  <div>Google Classroom</div>
+  <div>Self Study Resources</div>
+
+  <div class="layout question">
+    <div></div>
+    <div>What are leaderboard points for and how do I get them?</div>
+    <div></div>
+  </div>
+  <div class="layout question">
+    <div></div>
+    <div>How do I get an A+ in this class?</div>
+    <div></div>
+  </div>
+  <div class="layout question">
+    <div></div>
+    <div>What should I do once the bell rings?</div>
+    <div></div>
+  </div>
+  <div class="layout question">
+    <div></div>
+    <div>When will I get marked late or tardy?</div>
+    <div></div>
+  </div>
+
+  <div class="layout topic">
+    <div>Gimkit</div>
+    <div>Every 10 correct answers is 1 point.</div>
+    <div>Winners get bonus points.</div>
+  </div>
+</body>
+</html>
