@@ -3,7 +3,7 @@ BUILD := build
 SLIDES := $(shell find . -mindepth 2 -name '*.md' -not -path './$(BUILD)/*' -not -path './.*')
 THEMES := $(wildcard themes/*.css)
 
-.PHONY: build test deploy
+.PHONY: build test deploy refactor
 
 # Copy all HTML into build/ after rebuilding any out-of-date decks,
 # plus only the images/ files the decks actually reference.
@@ -23,6 +23,16 @@ deploy: build
 	git add .
 	git diff --cached --quiet || git commit -m "$$(date '+%Y-%m-%d %H:%M:%S')"
 	git push
+
+# Replace ```llm:image / ```llm:slide blocks in the decks with generated
+# images (OpenAI) and slides (Claude). Keys come from .env.
+refactor: .venv/.installed
+	.venv/bin/python scripts/refactor.py $(SLIDES)
+
+.venv/.installed: scripts/requirements.txt
+	python3 -m venv .venv
+	.venv/bin/pip install -q -r $<
+	touch $@
 
 # Rebuild a deck only when its .md, a theme, or the marp config changed.
 %.html: %.md $(THEMES) .marprc.yml

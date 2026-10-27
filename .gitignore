@@ -1,0 +1,4 @@
+# API keys for `make refactor`; `make deploy` runs `git add .`, so keep these out.
+.env
+.venv/
+__pycache__/
