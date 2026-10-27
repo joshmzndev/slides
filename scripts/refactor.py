@@ -93,6 +93,15 @@ def slide_bounds(text, pos):
     return start, end
 
 
+def fit(text, match):
+    """Marp keywords that keep the image inside the slide: fill the slide
+    when the image is all it holds, otherwise leave room for the text."""
+    start, end = slide_bounds(text, match.start())
+    rest = text[start : match.start()] + text[match.end() : end]
+    alone = not re.sub(r"<!--.*?-->", "", rest, flags=re.S).strip()
+    return "bg contain" if alone else "h:450"
+
+
 def theme_css(text):
     name = re.search(r"^theme:\s*(\S+)", text, re.M)
     name = name[1] if name else "default"
@@ -119,7 +128,7 @@ def make_image(deck, text, match, clients):
         n += 1
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(base64.b64decode(result.data[0].b64_json))
-    alt = " ".join(filter(None, [f.get("marp"), f.get("alt")]))
+    alt = " ".join(filter(None, [f.get("marp") or fit(text, match), f.get("alt")]))
     link = Path(os.path.relpath(out, deck.parent)).as_posix()
     print(f"  image -> {out.relative_to(ROOT)}")
     return text[: match.start()] + f"![{alt}]({link})\n{note(f['prompt'])}\n" + text[match.end() :]
