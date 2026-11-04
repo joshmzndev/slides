@@ -81,6 +81,7 @@ One class, one person at a time.
 Skipped unless **all** are true:
 
 - At most **7 periods that day** and **28 that week**, counting this class
+- At most 1 subbed period a day
 - Not on leave
 - Free that period
 - Not already covering that period, or asked for this class before
