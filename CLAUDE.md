@@ -5,7 +5,7 @@ Slide decks written in Markdown and converted to HTML with [Marp](https://marp.a
 **Never read, open, print, or search any `.env` file (or its contents) in any way, including with `cat`, `grep`, `source`, or scripts that echo it.** It holds API keys. This is strictly forbidden, with no exceptions. Only `scripts/refactor.py` loads it, at run time.
 
 - `<course>/*.md`: slide sources (e.g. `ap-cyb/dns.md`); the `.html` next to each is Marp's output.
-- `index.html`: hand-written landing page for slides.manzano.dev; `make build` copies it to `build/index.html`. Nothing generates it, so whenever a deck or course is added, renamed, or removed, edit its "What's here" list by hand in the same change (a new course gets its own card).
+- `index.html`: hand-written landing page for slides.manzano.dev; `make build` copies it to `build/index.html`. It's only a general description of the site and deliberately doesn't link to individual decks, so it doesn't need updating when decks are added, renamed, or removed.
 - `templates/`: starter `.md` files to copy into a course folder (e.g. `peer-instruction.md`: a question with four A–D answer boxes). The Makefile skips this folder, so templates are never built or deployed.
 - `themes/`: custom Marp themes (set via `.marprc.yml`). Marp inlines them into the HTML, so the CSS isn't deployed.
 - `make build`: rebuilds decks whose `.md`, a theme, or `.marprc.yml` changed and copies the HTML into `build/`, keeping the folder layout, along with any `images/` files the decks reference.

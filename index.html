@@ -69,7 +69,7 @@
     overflow-wrap: anywhere;
   }
   h1 .domain { color: var(--muted); font-weight: 400; }
-  .lede { font-size: 1.15rem; margin: 0 0 3rem; }
+  .lede { font-size: 1.15rem; margin: 0 0 1rem; }
 
   h2 {
     font-size: 0.8rem;
@@ -79,20 +79,6 @@
     margin: 2.75rem 0 1rem;
   }
   p { margin: 0 0 1rem; }
-
-  /* Course cards */
-  .courses { display: grid; gap: 0.9rem; padding: 0; margin: 0; list-style: none; }
-  .course {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-left: 4px solid var(--accent);
-    border-radius: 10px;
-    padding: 1rem 1.15rem;
-  }
-  .course h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
-  .course p { margin: 0 0 0.6rem; color: var(--muted); font-size: 0.95rem; }
-  .course ul { margin: 0; padding-left: 1.1rem; }
-  .course li { margin: 0.15rem 0; }
 
   /* Keyboard shortcuts */
   .keys { display: grid; grid-template-columns: max-content 1fr; gap: 0.55rem 1rem; margin: 0; }
@@ -132,39 +118,16 @@
     The slide decks I use in class, published so students can look back
     at a lesson, catch up after an absence, or follow along on their own screen.
   </p>
-
-  <h2>What's here</h2>
-  <ul class="courses">
-    <li class="course" style="--accent: var(--blue)">
-      <h3>AP Cybersecurity</h3>
-      <p>Lessons on how networks and the internet work, and how they get attacked and defended.</p>
-      <ul>
-        <li><a href="ap-cyb/dns.html">DNS</a></li>
-        <li><a href="ap-cyb/social_engineering.html">Social Engineering</a></li>
-      </ul>
-    </li>
-    <li class="course" style="--accent: var(--orange)">
-      <h3>AP Computer Science A</h3>
-      <p>Lessons on programming and the computer science ideas behind it.</p>
-      <ul>
-        <li><a href="ap-csa/hashing-part-1.html">Hashing (Part 1)</a></li>
-        <li><a href="ap-csa/hashing-part-2.html">Hashing (Part 2)</a></li>
-      </ul>
-    </li>
-    <li class="course" style="--accent: var(--teal)">
-      <h3>General</h3>
-      <p>Material that applies to every class I teach.</p>
-      <ul>
-        <li><a href="general/class_policies.html">Class Policies</a></li>
-        <li><a href="general/substitutes.html">How Substitutes Are Picked</a></li>
-      </ul>
-    </li>
-  </ul>
+  <p>
+    Decks cover the courses I teach, such as AP Cybersecurity and
+    AP Computer Science A, along with general material like class policies.
+    There's no index of them here: you'll get a link to each deck in class.
+  </p>
 
   <h2>Using the slides</h2>
   <p>
     Each deck is a single web page that runs in any browser, including on a phone.
-    Usually you'll get a direct link in class; every deck lives at
+    Every deck lives at
     <code>slides.manzano.dev/&lt;course&gt;/&lt;deck&gt;.html</code>.
   </p>
   <dl class="keys">
