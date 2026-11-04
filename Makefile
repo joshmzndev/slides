@@ -1,6 +1,7 @@
 BUILD := build
-# Decks live in course folders; -mindepth 2 skips root files like CLAUDE.md.
-SLIDES := $(shell find . -mindepth 2 -name '*.md' -not -path './$(BUILD)/*' -not -path './.*')
+# Decks live in course folders; -mindepth 2 skips root files like CLAUDE.md,
+# and templates/ holds starter files, not decks.
+SLIDES := $(shell find . -mindepth 2 -name '*.md' -not -path './$(BUILD)/*' -not -path './templates/*' -not -path './.*')
 THEMES := $(wildcard themes/*.css)
 
 .PHONY: build test deploy refactor
@@ -9,7 +10,7 @@ THEMES := $(wildcard themes/*.css)
 # plus only the images/ files the decks actually reference.
 build: $(SLIDES:.md=.html)
 	rm -rf $(BUILD) && mkdir -p $(BUILD)
-	find . -name '*.html' -not -path './$(BUILD)/*' -not -path './.*' -exec cp --parents {} $(BUILD) \;
+	find . -name '*.html' -not -path './$(BUILD)/*' -not -path './templates/*' -not -path './.*' -exec cp --parents {} $(BUILD) \;
 	grep -ohE 'images/[^])"'"'"'[:space:]]+' $(SLIDES) | sort -u | xargs -r cp --parents -t $(BUILD)
 
 # Build, then serve build/ locally to preview changes (no commit or push).
