@@ -2,31 +2,48 @@
 /* @size 16:10 1280px 800px */
 @import 'uncover';
 
-/* Numbered lists become colored boxes (e.g. two truths and a lie).
-   Pale tints + dark text keep contrast high (WCAG AA); the colored
-   border and number mean color is never the only cue. No red/green,
-   so no box looks "right" or "wrong". */
-ol {
-  list-style-position: inside;
+/* Numbered lists become lettered answer boxes (multiple choice, two truths
+   and a lie), following COLORS.md: A-D keep fixed colors, only the letter
+   block carries the fill, and the letter means color is never the only cue.
+   For a list that really is a numbered sequence, add the `numbered` class
+   to the slide (<!-- _class: numbered -->) to opt out. */
+section:not(.numbered) > ol {
+  counter-reset: choice;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-ol > li {
+section:not(.numbered) > ol > li {
+  counter-increment: choice;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 88px;
+  align-content: center;
   margin: 0.4em 0;
-  padding: 0.5em 0.8em;
-  border-left: 0.35em solid var(--accent);
+  padding: 0.5em 0.8em 0.5em calc(88px + 0.8em);
+  overflow: hidden;
   border-radius: 12px;
-  background: var(--tint);
+  background: #f4f4f5;
   color: #1b1b1b;
   font-size: 0.8em;
   line-height: 1.35;
   text-align: left;
 }
-ol > li::marker {
-  color: var(--accent);
+section:not(.numbered) > ol > li::before {
+  content: counter(choice, upper-alpha);
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--choice);
+  color: var(--choice-text);
+  font-size: 40pt;
   font-weight: 700;
+  line-height: 1;
 }
-ol > li:nth-child(4n+1) { --tint: #E3EEFB; --accent: #1D5FA8; } /* blue */
-ol > li:nth-child(4n+2) { --tint: #FDEBD8; --accent: #A84A0A; } /* orange */
-ol > li:nth-child(4n+3) { --tint: #EEE6F8; --accent: #6A3D9A; } /* purple */
-ol > li:nth-child(4n+4) { --tint: #DDF2EF; --accent: #0E6B63; } /* teal */
+section:not(.numbered) > ol > li:nth-child(1) { --choice: #0072B2; --choice-text: #fff; } /* A: blue */
+section:not(.numbered) > ol > li:nth-child(2) { --choice: #E69F00; --choice-text: #000; } /* B: orange */
+section:not(.numbered) > ol > li:nth-child(3) { --choice: #009E73; --choice-text: #000; } /* C: teal-green */
+section:not(.numbered) > ol > li:nth-child(4) { --choice: #CC79A7; --choice-text: #000; } /* D: pink-purple */

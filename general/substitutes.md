@@ -65,7 +65,7 @@ One class, one person at a time.
 
 ---
 
-<!-- _class: flow -->
+<!-- _class: flow numbered -->
 
 # The order
 
@@ -92,7 +92,7 @@ Skipped unless **all** are true:
 
 ---
 
-<!-- _class: pools -->
+<!-- _class: pools numbered -->
 
 # 2. Pools
 
@@ -106,6 +106,8 @@ Next pool only when **nobody** is left in this one.
 6. **Non-Teaching Staff** list *(HR)*
 
 ---
+
+<!-- _class: numbered -->
 
 # 3. Ties *(Pools 2–6)*
 

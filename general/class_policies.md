@@ -27,24 +27,18 @@ style: |
   /* Two truths and a lie */
   section.options, section.options-long {
     display: grid;
-    grid-template-rows: 30% 10% 20% 20% 20%;
+    grid-template-rows: 30% 1fr;
     justify-items: stretch;
     align-items: center;
-    text-align: left;
   }
-  section.options-long { grid-template-rows: 30% 5% 21% 21% 21%; }
-  section.options > p, section.options-long > p { margin: 0; }
-  section.options > p:first-child, section.options-long > p:first-child {
+  section.options > p, section.options-long > p {
     height: 100%;
+    margin: 0;
     text-align: center;
   }
   section.options img, section.options-long img { height: 100%; }
-  section.options > p:nth-child(2), section.options-long > p:nth-child(2) { grid-row: 3; }
-  section.options > p:nth-child(3), section.options-long > p:nth-child(3) { grid-row: 4; }
-  section.options > p:nth-child(4), section.options-long > p:nth-child(4) { grid-row: 5; }
-  section.options > p { font-size: 50px; }
-  section.options-long > p { font-size: 34px; font-weight: 400; line-height: 1.25; }
-  section.options-long strong { font-weight: 700; }
+  section.options > ol > li { font-size: 50px; }
+  section.options-long > ol > li { font-size: 34px; font-weight: 400; line-height: 1.25; }
 
   /* Single-question slides */
   section.question h1 { font-size: 76px; }
@@ -81,11 +75,9 @@ style: |
 
 ![](../images/truth_lie_banner.png)
 
-**A.** 7 / 2 == 3
-
-**B.** (1 + "2" + 3) == "123"
-
-**C.** "computer".substring(2, 5) == "mput"
+1. 7 / 2 == 3
+2. (1 + "2" + 3) == "123"
+3. "computer".substring(2, 5) == "mput"
 
 ---
 
@@ -93,11 +85,9 @@ style: |
 
 ![](../images/truth_lie_banner.png)
 
-**A.** A website sees the public IP address of the network you use. This is so it can know which internet is connecting.
-
-**B.** A website can see the private IP address of your device. This is so it can know which device is connecting.
-
-**C.** An IP address alone does not tell you who a person is. You need help from police or IT to figure it out.
+1. A website sees the public IP address of the network you use. This is so it can know which internet is connecting.
+2. A website can see the private IP address of your device. This is so it can know which device is connecting.
+3. An IP address alone does not tell you who a person is. You need help from police or IT to figure it out.
 
 ---
 
