@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "deck": "ap-cyb/hashing-part-1",
+  "title": "Hashing (Part 1)",
+  "questions": [
+    {
+      "id": "q-b2cd353288a0",
+      "order": 1,
+      "slide": 27,
+      "ask": "Which statement about hashes is false?",
+      "options": {
+        "A": "You need a password to be able to decrypt a hash.",
+        "B": "You cannot decrypt a hash at all.",
+        "C": "You can brute force to figure out what the input of a hash is."
+      },
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-4ec938f79067",
+      "order": 2,
+      "slide": 28,
+      "ask": "Which statement about hashes is false?",
+      "options": {
+        "A": "If you are hashing a word, then it will always give the same output for that word.",
+        "B": "If you given the hash for a specific word, then it is impossible to figure out the word.",
+        "C": "It is not hard to use a hash function."
+      },
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-b9f2af80b4ae",
+      "order": 3,
+      "slide": 29,
+      "ask": "Which statement about hash functions is false?",
+      "options": {
+        "A": "Hash functions are secret and cannot be used by normal people.",
+        "B": "Hash functions turn an input into a specific output, with the same result every time.",
+        "C": "Hash functions are one-way, meaning you cannot use the same function to get the input if you are only given the output."
+      },
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-6b0b2a405fe6",
+      "order": 4,
+      "slide": 30,
+      "ask": "Which statement about hash functions is false?",
+      "options": {
+        "A": "Hash functions are used by websites to check if you have entered the correct password.",
+        "B": "There are many hash functions in the world, and they are usually available to use by anyone.",
+        "C": "If you are given the output of a hash function, you can figure out the input as long as you have access to the hash function."
+      },
+      "answers": [
+        "C"
+      ]
+    }
+  ]
+}

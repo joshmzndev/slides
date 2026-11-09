@@ -126,6 +126,18 @@ Maybe using a computer also?
 2. You cannot decrypt a hash at all.
 3. You can brute force to figure out what the input of a hash is.
 
+<!-- question
+ask: Which statement about hashes is false?
+answer: A
+-->
+
+<!--
+Why: A hash has no password or key, because it isn't encryption. It can only be attacked by hashing guesses and comparing the outputs.
+Watch for:
+- Confuses hashing with encryption, so expects a password or key
+- Thinks brute force can't work because hashes can't be decrypted
+-->
+
 ---
 
 ## Spot the lie!
@@ -133,6 +145,18 @@ Maybe using a computer also?
 1. If you are hashing a word, then it will always give the same output for that word.
 2. If you given the hash for a specific word, then it is impossible to figure out the word.
 3. It is not hard to use a hash function.
+
+<!-- question
+ask: Which statement about hashes is false?
+answer: B
+-->
+
+<!--
+Why: A hash can't be reversed, but a word can still be found by hashing guesses until one matches.
+Watch for:
+- Treats one-way as meaning the input can never be found
+- Thinks a word could hash to a different output each time
+-->
 
 ---
 
@@ -142,6 +166,17 @@ Maybe using a computer also?
 2. Hash functions turn an input into a specific output, with the same result every time.
 3. Hash functions are one-way, meaning you cannot use the same function to get the input if you are only given the output.
 
+<!-- question
+ask: Which statement about hash functions is false?
+answer: A
+-->
+
+<!--
+Why: Common hash functions are public and anyone can use them. Their safety comes from being one-way, not from being secret.
+Watch for:
+- Thinks the security of a hash depends on keeping the function secret
+-->
+
 ---
 
 ## Spot the lie!
@@ -149,3 +184,15 @@ Maybe using a computer also?
 1. Hash functions are used by websites to check if you have entered the correct password.
 2. There are many hash functions in the world, and they are usually available to use by anyone.
 3. If you are given the output of a hash function, you can figure out the input as long as you have access to the hash function.
+
+<!-- question
+ask: Which statement about hash functions is false?
+answer: C
+-->
+
+<!--
+Why: Having the function doesn't let you run it backwards, because hash functions are one-way.
+Watch for:
+- Thinks a hash function can be run in reverse like a decryption
+- Doesn't connect comparing password hashes at login to how websites check passwords
+-->

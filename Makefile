@@ -7,11 +7,14 @@ THEMES := $(wildcard themes/*.css)
 .PHONY: build test deploy refactor
 
 # Copy all HTML into build/ after rebuilding any out-of-date decks,
-# plus only the images/ files the decks actually reference.
+# plus only the images/ files the decks actually reference, and the
+# questions JSON for decks with question slides.
 build: $(SLIDES:.md=.html)
 	rm -rf $(BUILD) && mkdir -p $(BUILD)
 	find . -name '*.html' -not -path './$(BUILD)/*' -not -path './templates/*' -not -path './.*' -exec cp --parents {} $(BUILD) \;
 	grep -ohE 'images/[^])"'"'"'[:space:]]+' $(SLIDES) | sort -u | xargs -r cp --parents -t $(BUILD)
+	python3 scripts/extract_questions.py $(BUILD) $(SLIDES)
+	python3 scripts/extract_questions.py . templates/model-example.md
 
 # Build, then serve build/ locally to preview changes (no commit or push).
 test: build

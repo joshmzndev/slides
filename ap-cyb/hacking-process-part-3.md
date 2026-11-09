@@ -15,7 +15,24 @@ As a pair, find the lie.
 
 ---
 
+<!-- _class: wrong-answer -->
 # What is *reconnaissance*? 
+
+Only submit *creative wrong answers* that your classmates might pick! There will be leaderboard points the more classmates you are able to convince.
+<!--question
+answer: It is the gathering of information to help find weaknesses.
+-->
+
+---
+
+<!-- _class: best-answer -->
+# What is *reconnaissance*? 
+
+Based from what you've learned, write the best *correct answer* that you can do.
+
+<!--question
+answer: It is the gathering of information to help find weaknesses.
+-->
 
 ---
 

@@ -1,0 +1,145 @@
+{
+  "schema": 2,
+  "deck": "templates/model-example",
+  "title": "Encryption Basics (Model Example)",
+  "questions": [
+    {
+      "id": "q-33b9133f6b74",
+      "order": 1,
+      "slide": 3,
+      "ask": "In symmetric encryption, which key decrypts the message?",
+      "options": {
+        "A": "The same key that encrypted it",
+        "B": "A different key from the one that encrypted it",
+        "C": "No key is needed to decrypt it",
+        "D": "Any key of the same length"
+      },
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-303a7b2dca7d",
+      "order": 2,
+      "slide": 4,
+      "ask": "Which statement about encryption is false?",
+      "options": {
+        "A": "Encryption can be reversed with the right key.",
+        "B": "Encrypted data looks random without the key.",
+        "C": "A longer key always makes a message shorter."
+      },
+      "answers": [
+        "C"
+      ]
+    },
+    {
+      "id": "q-f77d070fd1d8",
+      "order": 3,
+      "slide": 5,
+      "ask": "Which statement about asymmetric encryption is false?",
+      "options": {
+        "A": "In asymmetric encryption, the public key can be shared with anyone.",
+        "B": "In asymmetric encryption, the private key should be shared with friends.",
+        "C": "Asymmetric encryption uses two different keys."
+      },
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "q-2fb0e9cb9e09",
+      "order": 4,
+      "slide": 6,
+      "ask": "Alice wants to send Bob a secret message. Which key should she encrypt it with?",
+      "options": {
+        "A": "Bob's public key",
+        "B": "Bob's private key"
+      },
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-51d283d4cbe5",
+      "order": 5,
+      "slide": 8,
+      "ask": "Why can't Alice just send the key along with the message?",
+      "options": {},
+      "answers": [
+        "Anyone who intercepts the message also gets the key, so they can decrypt it. The key needs a separate, safe way to reach Bob."
+      ]
+    },
+    {
+      "id": "q-4ff27035f9c7",
+      "order": 6,
+      "slide": 9,
+      "ask": "Your school wants to protect student records. What would you recommend?",
+      "options": {},
+      "answers": [
+        "Encrypt the records, and give keys only to staff who need them. Store keys apart from the data, and keep a secure backup so a lost key doesn't mean lost records."
+      ]
+    },
+    {
+      "id": "q-33b9133f6b74-2",
+      "order": 7,
+      "slide": 11,
+      "ask": "In symmetric encryption, which key decrypts the message?",
+      "options": {
+        "A": "The same key that encrypted it",
+        "B": "A different key from the one that encrypted it",
+        "C": "No key is needed to decrypt it",
+        "D": "Any key of the same length"
+      },
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "q-0a9e43c9d95d",
+      "order": 8,
+      "slide": 12,
+      "ask": "Which of these can safely be shared with anyone?",
+      "options": {
+        "A": "A public key",
+        "B": "A private key",
+        "C": "An encrypted message",
+        "D": "A symmetric key"
+      },
+      "answers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "q-ad60453d7a97",
+      "order": 9,
+      "slide": 13,
+      "ask": "How could Alice get a symmetric key to Bob safely?",
+      "options": {},
+      "answers": [
+        "Hand it to Bob in person, so it never crosses the network.",
+        "Encrypt it with Bob's public key, so only Bob's private key can recover it."
+      ]
+    },
+    {
+      "id": "q-4aaa75e37831",
+      "order": 10,
+      "slide": 14,
+      "ask": "What does a private key do?",
+      "options": {},
+      "answers": [
+        "It decrypts messages that were encrypted with the matching public key."
+      ]
+    },
+    {
+      "id": "q-4aaa75e37831-2",
+      "order": 11,
+      "slide": 15,
+      "ask": "What does a private key do?",
+      "options": {},
+      "answers": [
+        "It decrypts messages that were encrypted with the matching public key."
+      ]
+    }
+  ]
+}

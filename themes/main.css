@@ -47,3 +47,38 @@ section:not(.numbered) > ol > li:nth-child(1) { --choice: #0072B2; --choice-text
 section:not(.numbered) > ol > li:nth-child(2) { --choice: #E69F00; --choice-text: #000; } /* B: orange */
 section:not(.numbered) > ol > li:nth-child(3) { --choice: #009E73; --choice-text: #000; } /* C: teal-green */
 section:not(.numbered) > ol > li:nth-child(4) { --choice: #CC79A7; --choice-text: #000; } /* D: pink-purple */
+
+/* Submission modes for open-response slides: a slim banner along the bottom
+   tells students whether to submit their best answer or a convincing wrong
+   one. Add <!-- _class: best-answer --> or <!-- _class: wrong-answer --> to
+   the slide. Per COLORS.md, the colors avoid the A-D palette and red/green,
+   and the symbol, wording, and dashed edge keep the modes distinct in
+   grayscale. */
+section.best-answer,
+section.wrong-answer {
+  padding-bottom: 104px; /* keeps content clear of the banner */
+}
+section.best-answer::before,
+section.wrong-answer::before {
+  position: absolute;
+  inset: auto 0 0 0;
+  box-sizing: border-box;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+section.best-answer::before {
+  content: "✓ Your best answer";
+  background: #1b1b1b;
+  color: #fff;
+}
+section.wrong-answer::before {
+  content: "✗ Wrong answers only: fool the class";
+  border-top: 5px dashed #000;
+  background: #F0E442;
+  color: #000;
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "deck": "ap-cyb/general_questions",
+  "title": "General Questions",
+  "questions": [
+    {
+      "id": "q-6ccd9d62144a",
+      "order": 1,
+      "slide": 1,
+      "ask": "What is a private IP address?",
+      "options": {},
+      "answers": [
+        "It is an identifier that is given to a device once it connects to the router."
+      ]
+    },
+    {
+      "id": "q-d35a67546086",
+      "order": 2,
+      "slide": 2,
+      "ask": "What is an IP address?",
+      "options": {},
+      "answers": [
+        "It is the gathering of information to help find weaknesses."
+      ]
+    }
+  ]
+}
