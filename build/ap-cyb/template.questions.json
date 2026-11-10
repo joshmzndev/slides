@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "deck": "ap-cyb/template",
+  "title": "Hacking Process Part 3",
+  "questions": [
+    {
+      "id": "q-b83410d9cb0b",
+      "order": 1,
+      "slide": 2,
+      "ask": "What is *reconnaissance*?",
+      "options": {},
+      "answers": [
+        "It is the gathering of information to help find weaknesses."
+      ]
+    },
+    {
+      "id": "q-b83410d9cb0b-2",
+      "order": 2,
+      "slide": 3,
+      "ask": "What is *reconnaissance*?",
+      "options": {},
+      "answers": [
+        "It is the gathering of information to help find weaknesses."
+      ]
+    }
+  ]
+}

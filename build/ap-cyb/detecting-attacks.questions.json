@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "deck": "ap-cyb/detecting-attacks",
+  "title": "Detecting Attacks or Hacking",
+  "questions": [
+    {
+      "id": "q-911ca3be9ce1",
+      "order": 1,
+      "slide": 11,
+      "ask": "What is a \"baseline\"?",
+      "options": {},
+      "answers": [
+        "An established normal behavior."
+      ]
+    },
+    {
+      "id": "q-911ca3be9ce1-2",
+      "order": 2,
+      "slide": 12,
+      "ask": "What is a \"baseline\"?",
+      "options": {},
+      "answers": [
+        "An established normal behavior."
+      ]
+    },
+    {
+      "id": "q-26d375babe33",
+      "order": 3,
+      "slide": 13,
+      "ask": "What is an \"anomaly\"?",
+      "options": {},
+      "answers": [
+        "Something that is not following the baseline."
+      ]
+    },
+    {
+      "id": "q-26d375babe33-2",
+      "order": 4,
+      "slide": 14,
+      "ask": "What is an \"anomaly\"?",
+      "options": {},
+      "answers": [
+        "Something that is not following the baseline."
+      ]
+    },
+    {
+      "id": "q-9fff56c4e339",
+      "order": 5,
+      "slide": 15,
+      "ask": "What is the difference between detection and prevention?",
+      "options": {},
+      "answers": [
+        "Detection only tells you, prevention stops it for you.",
+        "Detection only spots attacks, prevention stops attacks."
+      ]
+    },
+    {
+      "id": "q-9fff56c4e339-2",
+      "order": 6,
+      "slide": 16,
+      "ask": "What is the difference between detection and prevention?",
+      "options": {},
+      "answers": [
+        "Detection only tells you, prevention stops it for you.",
+        "Detection only spots attacks, prevention stops attacks."
+      ]
+    }
+  ]
+}
