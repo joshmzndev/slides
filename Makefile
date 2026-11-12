@@ -30,6 +30,7 @@ deploy: build
 
 # Replace ```llm:image / ```llm:slide blocks in the decks with generated
 # images (OpenAI) and slides (Claude). Keys come from .env.
+# Also expands answer-modes slides into wrong-answer + best-answer pairs.
 refactor: .venv/.installed
 	.venv/bin/python scripts/refactor.py $(SLIDES)
 

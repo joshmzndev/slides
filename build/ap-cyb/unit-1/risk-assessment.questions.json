@@ -1,0 +1,150 @@
+{
+  "schema": 2,
+  "deck": "ap-cyb/unit-1/risk-assessment",
+  "title": "Risk Assessment (Cybersecurity)",
+  "questions": [
+    {
+      "id": "q-759e55fa9c48",
+      "order": 1,
+      "slide": 9,
+      "ask": "How can a school do risk avoidance on this scenario: storing exams digitally on a school server.",
+      "options": {},
+      "answers": [
+        "Just have the exams on paper, don't store it on the school server.",
+        "Have the server fully offline and only allow physical access."
+      ]
+    },
+    {
+      "id": "q-759e55fa9c48-2",
+      "order": 2,
+      "slide": 10,
+      "ask": "How can a school do risk avoidance on this scenario: storing exams digitally on a school server.",
+      "options": {},
+      "answers": [
+        "Just have the exams on paper, don't store it on the school server.",
+        "Have the server fully offline and only allow physical access."
+      ]
+    },
+    {
+      "id": "q-e86389043ef4",
+      "order": 3,
+      "slide": 14,
+      "ask": "How can a school do risk transfer on this scenario: allowing students to take their exams remotely.",
+      "options": {},
+      "answers": [
+        "They hire a third-party service to help secure their remote exam procedures.",
+        "They get a security company to do anti-cheating measures for their exams."
+      ]
+    },
+    {
+      "id": "q-e86389043ef4-2",
+      "order": 4,
+      "slide": 15,
+      "ask": "How can a school do risk transfer on this scenario: allowing students to take their exams remotely.",
+      "options": {},
+      "answers": [
+        "They hire a third-party service to help secure their remote exam procedures.",
+        "They get a security company to do anti-cheating measures for their exams."
+      ]
+    },
+    {
+      "id": "q-0a09d175ad8f",
+      "order": 5,
+      "slide": 18,
+      "ask": "How can a school do risk mitigation on this scenario: storing their exams on their school server digitally.",
+      "options": {},
+      "answers": [
+        "Add a well-configured firewall to prevent intrusion.",
+        "Add cameras around the school server to not allow unauthorized physical access."
+      ]
+    },
+    {
+      "id": "q-c5560a510771",
+      "order": 6,
+      "slide": 20,
+      "ask": "How can you do risk avoidance in this scenario: Protecting your phone, which has almost everything. You usually bring it everywhere.",
+      "options": {},
+      "answers": [
+        "Leaving your phone at home most of the time.",
+        "Having two phones instead, leave the most important one at home."
+      ]
+    },
+    {
+      "id": "q-c5560a510771-2",
+      "order": 7,
+      "slide": 21,
+      "ask": "How can you do risk avoidance in this scenario: Protecting your phone, which has almost everything. You usually bring it everywhere.",
+      "options": {},
+      "answers": [
+        "Leaving your phone at home most of the time.",
+        "Having two phones instead, leave the most important one at home."
+      ]
+    },
+    {
+      "id": "q-4b4e44a49efa",
+      "order": 8,
+      "slide": 22,
+      "ask": "How can you do risk transfer in this scenario: Protecting your phone, which has almost everything. You usually bring it everywhere.",
+      "options": {},
+      "answers": [
+        "Adding a software from a security company that controls and protects your phone for you.",
+        "Having someone else take care of it for you."
+      ]
+    },
+    {
+      "id": "q-4b4e44a49efa-2",
+      "order": 9,
+      "slide": 23,
+      "ask": "How can you do risk transfer in this scenario: Protecting your phone, which has almost everything. You usually bring it everywhere.",
+      "options": {},
+      "answers": [
+        "Adding a software from a security company that controls and protects your phone for you.",
+        "Having someone else take care of it for you."
+      ]
+    },
+    {
+      "id": "q-817973127f79",
+      "order": 10,
+      "slide": 24,
+      "ask": "How can you do risk mitigation in this scenario: Protecting your phone, which has almost everything. You usually bring it everywhere.",
+      "options": {},
+      "answers": [
+        "Installing antivirus software in your phone.",
+        "Turning on software that allows you to track your phone if it is lost."
+      ]
+    },
+    {
+      "id": "q-817973127f79-2",
+      "order": 11,
+      "slide": 25,
+      "ask": "How can you do risk mitigation in this scenario: Protecting your phone, which has almost everything. You usually bring it everywhere.",
+      "options": {},
+      "answers": [
+        "Installing antivirus software in your phone.",
+        "Turning on software that allows you to track your phone if it is lost."
+      ]
+    },
+    {
+      "id": "q-f8e981426f2f",
+      "order": 12,
+      "slide": 26,
+      "ask": "What is the main difference between *risk transference* and *risk mitigation*?",
+      "options": {},
+      "answers": [
+        "Transfer means someone else is doing the security improvements. Mitigation means you are doing it yourself.",
+        "If something gets hacked, \"risk transference\" means someone else is responsible for it."
+      ]
+    },
+    {
+      "id": "q-f8e981426f2f-2",
+      "order": 13,
+      "slide": 27,
+      "ask": "What is the main difference between *risk transference* and *risk mitigation*?",
+      "options": {},
+      "answers": [
+        "Transfer means someone else is doing the security improvements. Mitigation means you are doing it yourself.",
+        "If something gets hacked, \"risk transference\" means someone else is responsible for it."
+      ]
+    }
+  ]
+}

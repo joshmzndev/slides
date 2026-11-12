@@ -3,8 +3,7 @@ theme: main
 title: Detecting Attacks or Hacking
 ---
 
-Pair up (or three) and pick a seating.
-**Only rule:** You cannot pick the same person and the same seat as last time.
+**Only rule:** You cannot pick the same seat as last time.
 
 Which sentence is wrong?
 
