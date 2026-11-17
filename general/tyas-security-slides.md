@@ -77,3 +77,10 @@ Everyone gets only the access they need, nothing more
 
 - **Local AI:** running on the school server, being polished for speed
 - **API:** easy to implement, needs a decision on monthly teacher credits
+- **Plans:** Will coordinate with Office regarding the access controls
+
+---
+
+fin
+
+---
