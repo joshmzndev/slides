@@ -232,6 +232,29 @@ ask: What is the main difference between *risk transference* and *risk mitigatio
 answer: Transfer means someone else is doing the security improvements. Mitigation means you are doing it yourself. 
 answer: If something gets hacked, "risk transference" means someone else is responsible for it.
 -->
+---
+
+<!-- _class: wrong-answer -->
+
+## What does *risk acceptance* mean?
+
+<!--question
+ask: What does risk acceptance mean?
+answer: It means accepting the residual risk (remaining risk) after doing avoid, transfer, and mitigate.
+answer: It means accepting the consequences or impact of any remaining risk after you have done everything you can.
+-->
+
+---
+
+<!-- _class: best-answer -->
+
+## What does *risk acceptance* mean?
+
+<!--question
+ask: What does risk acceptance mean?
+answer: It means accepting the residual risk (remaining risk) after doing avoid, transfer, and mitigate.
+answer: It means accepting the consequences or impact of any remaining risk after you have done everything you can.
+-->
 
 ---
 

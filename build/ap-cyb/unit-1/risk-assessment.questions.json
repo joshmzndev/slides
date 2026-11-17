@@ -145,6 +145,28 @@
         "Transfer means someone else is doing the security improvements. Mitigation means you are doing it yourself.",
         "If something gets hacked, \"risk transference\" means someone else is responsible for it."
       ]
+    },
+    {
+      "id": "q-bc271b909c31",
+      "order": 14,
+      "slide": 28,
+      "ask": "What does risk acceptance mean?",
+      "options": {},
+      "answers": [
+        "It means accepting the residual risk (remaining risk) after doing avoid, transfer, and mitigate.",
+        "It means accepting the consequences or impact of any remaining risk after you have done everything you can."
+      ]
+    },
+    {
+      "id": "q-bc271b909c31-2",
+      "order": 15,
+      "slide": 29,
+      "ask": "What does risk acceptance mean?",
+      "options": {},
+      "answers": [
+        "It means accepting the residual risk (remaining risk) after doing avoid, transfer, and mitigate.",
+        "It means accepting the consequences or impact of any remaining risk after you have done everything you can."
+      ]
     }
   ]
 }
