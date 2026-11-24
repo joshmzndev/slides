@@ -50,7 +50,7 @@ Which is a *wrong* idea?
 
 ---
 
-![bg contain](../../images/confidentiality/a-password-screen-on-a-laptop-to-stop-un.png)
+![bg contain](../../images/confidentiality/a-password-screen-on-a-laptop-to-stop-un_2.png)
 <!-- llm prompt: A password screen on a laptop to stop unauthorized people from getting in. -->
 
 ---
@@ -84,6 +84,11 @@ answer: It is protecting information or access so that it is not seen or used by
 ---
 
 ## How can you send sensitive messages to trusted people without bad people seeing it?
+
+---
+
+![bg contain](../../images/confidentiality/a-student-giving-out-padlocks-to-a-lot-o.png)
+<!-- llm prompt: A student giving out padlocks to a lot of people, different scenes, with him having a key that unlocks it all. -->
 
 ---
 
