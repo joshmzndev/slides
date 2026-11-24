@@ -1,0 +1,27 @@
+{
+  "schema": 2,
+  "deck": "ap-cyb/unit-1/confidentiality",
+  "title": "Risk Assessment (Cybersecurity)",
+  "questions": [
+    {
+      "id": "q-0c37ef755b3f",
+      "order": 1,
+      "slide": 10,
+      "ask": "What is confidentiality?",
+      "options": {},
+      "answers": [
+        "It is protecting information or access so that it is not seen or used by unauthorized people."
+      ]
+    },
+    {
+      "id": "q-0c37ef755b3f-2",
+      "order": 2,
+      "slide": 11,
+      "ask": "What is confidentiality?",
+      "options": {},
+      "answers": [
+        "It is protecting information or access so that it is not seen or used by unauthorized people."
+      ]
+    }
+  ]
+}
